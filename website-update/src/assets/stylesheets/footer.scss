@@ -1,0 +1,52 @@
+.main-footer {
+  background-color: $footer;
+  padding: 50px 150px;
+}
+
+.footer-left {
+  display: inline-block;
+  width: 40%;
+
+  .footer-nav {
+    padding-left: 30px;
+
+    .footer-nav-link {
+      // display: block;
+      color: $white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .footer-nav-link:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.footer-right {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+}
+
+.butter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.attribution {
+  color: $white;
+  margin-right: 10px;
+}
+
+.attribution-image {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  background: url('../assets/images/butter-white.png') no-repeat;
+  background-position: 0px 6px;
+  background-size: 100px 25px;
+}

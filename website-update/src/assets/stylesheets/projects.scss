@@ -1,0 +1,341 @@
+.projects-view {
+  width: 100%;
+  height: auto;
+}
+
+.projects-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.projects {
+  padding: 200px 250px;
+
+    .projects-heading {
+      font-size: 40px;
+      margin-bottom: 100px;
+      position: relative;
+    }
+
+    .case-title,
+    .case-content,
+    .case-images {
+      animation: slow-fade-in 1s ease-in forwards;
+    }
+
+    .case-content,
+    .case-images {
+      animation-delay: .5s;
+    }
+
+    .project-wrapper {
+      position: relative;
+      height: 300px;
+      margin-bottom: 200px;
+      opacity: 0;
+      animation: slow-fade-in 1s ease-in forwards;
+    }
+
+    #rostered-wrapper {
+
+    }
+
+    #weather_app-wrapper {
+      animation-delay: .35s;
+    }
+
+    #modern_web-wrapper {
+      animation-delay: .65s;
+    }
+
+    #honda-wrapper {
+      animation-delay: .95s;
+    }
+
+    #bcc-wrapper {
+      animation-delay: 1.25s;
+    }
+
+    .project-wrapper:last-child {
+      margin-bottom: 75px;
+    }
+
+    .project-name,
+    .project-name-reverse {
+      font-size: 30px;
+      display: inline-block;
+      position: absolute;
+      top: calc(50% - 12px);
+    }
+
+    .project-name {
+      left: 70%;
+    }
+
+    .project-name-reverse {
+      right: 70%;
+    }
+
+    .project-image,
+    .project-image-reverse {
+      // background: url('https://picsum.photos/300/300') no-repeat;
+      // background-position: 0 0;
+      // background-size: 300px;
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .project-image-url {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .project-image {
+      left: 10%;
+    }
+
+    .project-image-reverse {
+      right: 10%;
+    }
+
+}
+
+.connect {
+  background-color: $primary;
+  color: $white;
+  padding: 200px 250px;
+  text-align: center;
+
+  .connect-main-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .connect-link {
+    color: $white;
+    padding: 15px 30px;
+    background-color: $secondary;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+}
+
+.projects-banner {
+  width: 500px;
+  border-radius: 50%;
+  height: 500px;
+  display: inline-block;
+  position: absolute;
+  top: -250px;
+  right: -200px;
+  background: url('https://picsum.photos/300/300') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.projects-banner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.projects-content {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+
+  .projects-content-text {
+    padding: 0 75px;
+    line-height: 1.3;
+  }
+
+  .projects-link {
+    margin: 70px 0 70px 75px;
+    display: inline-block;
+  }
+
+  .projects-content-h2 {
+    padding-left: 75px;
+    margin: 70px 0 20px;
+    font-size: 24px;
+  }
+
+  .projects-content-list {
+    list-style: circle;
+    padding: 0 100px;
+
+    .projects-content-list-item {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.projects-images {
+  width: 40%;
+  display: inline-block;
+}
+
+.projects-images-item {
+  width: 150px;
+  // width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+
+  img {
+    width: 100%;
+    box-shadow: 1px 0px 0 #fff, 0 0 30px rgba(0,95,99,0.2);
+    // transform: rotateY(-30deg) rotateX(5deg);
+    // transform-origin: bottom left;
+  }
+}
+
+//Overlap img view
+// .project-view-1 {
+//   z-index: 100;
+//   top: 30px;
+//   position: absolute;
+// }
+//
+// .project-view-2 {
+//   width: 500px;
+//   left: 150px;
+//   z-index: 10;
+//   position: absolute;
+// }
+
+.projects-gif {
+  width: calc(100% - 75px);
+  margin-left: 75px;
+
+
+  img {
+    width: 100%;
+    box-shadow: 1px 0px 0 #fff, 0 0 30px rgba(0,95,99,0.2);
+  }
+}
+
+#weather_app_logo {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  background: url('../assets/images/cloud.svg') no-repeat 18px 16px;
+  background-size: cover;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#rostered_logo {
+  position: absolute;
+  top: 125px;
+  left: 75px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  // background: url('../assets/images/.svg') no-repeat 18px 16px;
+  // background-size: cover;
+  // background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#modern_web_logo {
+  position: absolute;
+  top: 100px;
+  left: 75px;
+  background: url('../assets/images/factory-logo.svg') no-repeat 18px 16px;
+  background-size: contain;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#honda_logo {
+  position: absolute;
+  top: 90px;
+  left: 75px;
+  background: url('../assets/images/honda-cars-logo-white.png') no-repeat 18px 16px;
+  background-size: contain;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#bcc_logo {
+  position: absolute;
+  top: 90px;
+  left: 75px;
+  background: url('../assets/images/newmattlogowhite.png') no-repeat 18px 16px;
+  background-size: contain;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#weather_app_banner_logo {
+  position: absolute;
+  top: 240px;
+  left: 75px;
+  background: url('../assets/images/cloud.svg') no-repeat 18px 16px;
+  background-size: 200px;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#rostered_banner_logo {
+  position: absolute;
+  top: 315px;
+  left: 50px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  // background: url('../assets/images/.svg') no-repeat 18px 16px;
+  // background-size: cover;
+  // background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#modern_web_banner_logo {
+  position: absolute;
+  top: 280px;
+  left: 75px;
+  background: url('../assets/images/factory-logo.svg') no-repeat 18px 16px;
+  background-size: 200px;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#honda_banner_logo {
+  position: absolute;
+  top: 275px;
+  left: 95px;
+  background: url('../assets/images/honda-cars-logo-white.png') no-repeat 18px 16px;
+  background-size: 180px;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+#bcc_banner_logo {
+  position: absolute;
+  top: 275px;
+  left: 95px;
+  background: url('../assets/images/newmattlogowhite.png') no-repeat 18px 16px;
+  background-size: 180px;
+  background-position: 0 0;
+  width: 50%;
+  height: 50%;
+}

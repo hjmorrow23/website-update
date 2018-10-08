@@ -1,0 +1,226 @@
+.home-view {
+  width: 100%;
+  height: 100%;
+}
+
+.home-header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $primary;
+  overflow: hidden;
+  border-right: 1px solid $primary;
+}
+
+.home-title-wrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  color: $grey;
+  background-color: $white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.home-header-left {
+  float: left;
+}
+
+.home-header-left,
+.home-header-right {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    display: block;
+  }
+}
+
+.home-header-text-wrapper {
+  height: 50%;
+  position: absolute;
+  top: calc(50% - 100px);
+  color: $white;
+  padding-left: 30%;
+
+  .home-header-text {
+    font-size: 56px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  .home-header-subtext {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .home-header-link {
+    text-decoration: none;
+    color: $white;
+    background-color: $secondary-buttons;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+}
+
+.home-title {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 23px);
+  text-align: center;
+}
+
+.rotate-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(0);
+  // animation: rotate-clockwise 20s infinite linear;
+}
+
+.rotater {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* top: calc(25% - 50px);
+  left: calc(50% - 50px); */
+
+  background-color: $secondary;
+  color: $white;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 50;
+  /* animation: rotate-around 2s ease-in-out infinite; */
+  /* transform-origin: calc(100% + 100px) 100px; */
+}
+
+.rotater-title {
+  position: relative;
+  top: 40px;
+  // animation: rotate-counterclockwise 20s infinite linear;
+}
+
+.react-bubble {
+  transform: translateX(50%) translateY(-150%) rotate(0deg);
+}
+
+.vue-bubble {
+  transform: translateX(225%) translateY(-50%) rotate(0deg);
+}
+
+.js-bubble {
+  transform: translateX(-125%) translateY(-50%) rotate(0deg);
+}
+
+.css-bubble {
+  transform: translateX(50%) translateY(250%) rotate(0deg);
+}
+
+.html-bubble {
+  transform: translateX(-125%) translateY(150%) rotate(0deg);
+}
+
+.git-bubble {
+  transform: translateX(225%) translateY(150%) rotate(0deg);
+}
+
+.scroll-icon {
+  position: absolute;
+  display: inline-block;
+  width: 34px;
+  bottom: 0;
+  left: calc(50% - 17px);
+
+  svg {
+    path,
+    polyline {
+      fill: none;
+      stroke: white;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+  }
+
+  path {
+    opacity: 0;
+    animation: stroke .9s .35s forwards;
+    animation-timing-function: cubic-bezier(1, .1, .8, 1);
+  }
+
+  svg {
+    /* margin: 5em; */
+    transform: scale(.75);
+  }
+
+  polyline {
+    opacity: 0;
+  }
+
+  svg:hover {
+    polyline {
+      opacity: 0;
+      animation: arrows .7s infinite, arrow_intro .25s forwards;
+
+      + polyline {
+        animation-delay: .1s;
+      }
+    }
+  }
+}
+
+.home-intro {
+  background-color: $white;
+  width: calc(100% - 500px);
+  padding: 150px 250px;
+}
+
+.intro-container {
+  text-align: center;
+}
+
+.intro-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 80px;
+  color: $grey;
+}
+
+.intro-project-list {
+  display: block;
+  margin-bottom: 100px;
+
+  .intro-project-list-item {
+    display: inline-block;
+    width: calc(100%/3);
+    text-align: center;
+  }
+
+  .intro-project-list-link {
+    display: inline-block;
+    width: 75%;
+    min-height: 230px;
+    border-radius: 50%;
+    background: url('https://picsum.photos/300/300') no-repeat;
+    margin-bottom: 40px;
+  }
+
+  .intro-project-list-text {
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+.projects-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: $secondary-buttons;
+  border-radius: 3px;
+  padding: 15px 30px;
+  color: $white;
+}

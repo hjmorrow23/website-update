@@ -1,0 +1,212 @@
+.blog-view {
+  width: 100%;
+  height: auto;
+}
+
+.blog-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $white;
+}
+
+.blog {
+  padding: 200px 250px;
+
+    .blog-header {
+      margin-bottom: 100px;
+      position: relative;
+    }
+
+    .blog-heading {
+      font-size: 40px;
+      opacity: 0;
+      animation: slow-fade-in 1s ease-in forwards;
+    }
+
+    .blog-search {
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      animation: slow-fade-in 1s ease-in forwards;
+
+
+      .blog-search-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $grey;
+        transition: border-bottom .35s;
+        font-size: 1rem;
+      }
+
+      .blog-search-input:focus {
+        border-bottom: 2px solid $grey;
+      }
+
+      .blog-searh-icon {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .blog-search-input:active,
+    .blog-search-input:focus {
+      outline: none;
+    }
+
+    .blog-left,
+    .blog-right {
+      display: inline-block;
+    }
+
+    .blog-left {
+      width: 80%;
+      vertical-align: top;
+      opacity: 0;
+      animation: slow-fade-up 1s forwards;
+      animation-delay: .5s;
+    }
+
+    .blog-post-list {
+
+      .development {
+        background-color: $primary;
+        color: $white;
+
+        .blog-post-icon {
+          background: url('../assets/images/code.svg') no-repeat;
+        }
+      }
+
+      .betterment {
+        background-color: $accents;
+        color: $white;
+
+        .blog-post-icon {
+          background: url('../assets/images/level-up.svg') no-repeat;
+        }
+      }
+
+      .entertainment {
+        background-color: $secondary;
+        color: $white;
+
+        .blog-post-icon {
+          background: url('../assets/images/ticket.svg') no-repeat;
+        }
+      }
+
+      .blog-post-list-item {
+        width: calc((100%/3) - 40px);
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 20px 0 0;
+        position: relative;
+        border-radius: 5px;
+        padding: 10px;
+
+        .blog-post-list-link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+        }
+
+        .blog-post-label {
+          margin-bottom: 30px;
+          font-size: 18px;
+
+          .blog-post-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-position: 0 0;
+            background-size: 20px;
+            margin-right: 10px;
+            position: relative;
+            top: 3px;
+          }
+        }
+
+        .blog-post-title {
+          margin-bottom: 30px;
+          font-size: 1.3rem;
+          line-height: 1.4em;
+        }
+
+        .blog-post-description {
+          font-size: 14px;
+          line-height: 1.4em;
+        }
+      }
+
+    }
+
+    .blog-right {
+      width: calc(20% - 21px);
+      vertical-align: top;
+      padding-left: 20px;
+      border-left: 1px solid $grey;
+      opacity: 0;
+      animation: slow-fade-in-right 1s forwards;
+      animation-delay: 1s;
+
+      .widget {
+        margin-bottom: 20px;
+
+        .widget-title {
+          font-size: 20px;
+          cursor: pointer;
+
+          .blog-item {
+            float: right;
+            pointer-events: none;
+          }
+        }
+
+        .widget-list {
+          margin-top: 15px;
+          display: none;
+
+          .category-list-item {
+            margin-bottom: 15px;
+          }
+
+          .tags-list-item {
+            color: $white;
+            background-color: $secondary-buttons;
+            display: inline-block;
+            border-radius: 3px;
+            padding: 3px;
+            margin: 0 5px 10px 0;
+            cursor: pointer;
+          }
+        }
+
+      }
+
+    }
+
+
+}
+
+.blog-banner-container {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+
+  .blog-banner {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog-content {
+  min-height: 150px;
+  opacity: 0;
+  animation: slow-fade-in 1s ease-in forwards;
+  animation-delay: 1s;
+}
